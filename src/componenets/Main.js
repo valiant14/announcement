@@ -3,6 +3,7 @@ import {Row, Col} from 'react-bootstrap'
 import bg from '../assets/bg.mp4'
 import SideContainer from './sideContainer'
 import MainContent from './mainContainer'
+import News from './newContainer'
 
 const Main = () => {
     return (
@@ -16,6 +17,11 @@ const Main = () => {
                         <Col>
                             <div className='timeContainer'>8:00AM</div>
                             <MainContent />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <News />
                         </Col>
                     </Row>
                 </Col>
