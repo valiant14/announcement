@@ -96,6 +96,16 @@ body {
   border-radius: 5rem;
 }
 
+/* change transition duration to control the speed of fade effect */
+.carousel-item {
+  transition: transform 1.5s ease-in-out;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 2.6s;
+}
+
 .captions {
   columns: #fff;
 }
@@ -150,6 +160,8 @@ body {
   height: 100vh;
   margin-left: calc(5%);
 }
+
+
 .weather-widget {
   display: block;
   position: absolute;
@@ -162,9 +174,20 @@ body {
   margin-top: calc(-3%);
 }
 
+.moon-weather {
+  width: 25%;
+  margin-left: calc(-5%);
+  margin-top: calc(-3%);
+}
+
 .cloud-weather {
   width: 20%;
   margin-left: calc(-17%);
+  margin-top: calc(5%);
+}
+.cloud-weather-night{
+  width: 25%;
+  margin-left: calc(-29%);
   margin-top: calc(5%);
 }
 

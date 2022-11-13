@@ -45,8 +45,11 @@ const Main = () => {
             hours = 12;
         }
         var time = hours + ":" + minutes + " " + suffix;
+
         return time;
     }
+
+    const times = currentTime.getHours()
 
     return (
         <React.Fragment>
@@ -54,7 +57,7 @@ const Main = () => {
                 <Col className='container'>
                     <Row>
                         <Col sm={3}>
-                            <SideContainer/>
+                            <SideContainer times={times}/>
                         </Col>
                         <Col>
                             <div className='timeContainer'>{GetTime()}</div>
