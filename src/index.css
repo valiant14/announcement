@@ -165,10 +165,10 @@
 }
 
 
-.Location {
-  translate: calc(1%) calc(-1%);
-} */
-
+ */
+ .Location {
+  translate: calc(-1%) calc(-1%);
+}
 
 .footer-News {
   position: absolute;
