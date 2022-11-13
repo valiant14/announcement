@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 
@@ -13,10 +14,11 @@
   align-items: center;
 }
 .timeContainer {
-  position:absolute;
+  position: absolute;
   font-size: 35px;
   width: max-content;
-  translate: calc(925%) calc(20%);
+  translate: calc(900%) calc(20%);
+  float: right;
 }
 .square {
   border: 1px solid #b2b2b2;

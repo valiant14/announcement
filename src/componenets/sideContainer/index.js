@@ -38,7 +38,9 @@ const SideContainer = () => {
           });
       }, []);
 
-      console.log(dates)
+      const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      const monthDate = dates.toLocaleString().split('-')
+      const template = `${months[monthDate[1] - 1]} ${monthDate[2]} ${monthDate[0]}`
 
     return (
         <React.Fragment>
@@ -57,7 +59,7 @@ const SideContainer = () => {
                             <h1 className="Location">Riyadh, {item.avgtemp_c}<span>&#176;</span>&nbsp;C</h1>
                                 <img src={Sun} alt="..." className="sun-weather"/>
                                 <img src={Cloud} alt="..." className="cloud-weather"/>
-                            <h3 className="Date">{dates}</h3>
+                            <h3 className="Date">{template}</h3>
                             </div>
                         )
                     })}
