@@ -58,7 +58,7 @@
   background-color: #333;
   height: 50vh;
   width: 90%;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   margin-top: calc(3%);
   margin-left: calc(5%);
 }
@@ -68,10 +68,18 @@
   background-color: #fff;
   height: 50vh;
   width: 100%;
-  border-radius: 1rem;
   margin-top: calc(-2%);
   margin-left: calc(-2%);
-  opacity: .9;
+  /* opacity: .9; */
+}
+
+.image-content {
+  width: 100%;
+  border-radius: 5rem;
+}
+
+.captions {
+  columns: #fff;
 }
 
 .annoucement-bg {
@@ -79,7 +87,7 @@
 }
 .main-bg {
   transform: skewX(-40deg);
-  width: 310px;
+  width: 330px;
   height: 90px;
   padding: .3rem 0rem;
   background: #333;
@@ -91,11 +99,11 @@
 
 .main-title {
   transform: skewX(-40deg);
-  width: 310px;
+  width: 330px;
   height: 90px;
   padding: .3rem 0rem;
   background: #eee;
-  translate: .70rem -4.7rem;
+  translate: .70rem -4.8rem;
   background-color: blue;
   border: 1px solid #333;
   box-shadow: -5px 9px 16px -9px rgba(0,0,0,0.84);
@@ -127,7 +135,7 @@
 .weather-widget {
   display: block;
   position: absolute;
-  margin-top: calc(13%);
+  margin-top: calc(9%);
   margin-left: calc(5%);
 }
 
@@ -164,9 +172,28 @@
 
 .footer-News {
   position: absolute;
-  width: 100%;
+  width: 105%;
   height: 10vh;
   background-color: blue;
-  translate: calc(0%) calc(-100%);
-  border: 5px solid #333;
+  translate: calc(0%) calc(-90%);
+  overflow: hidden;
 }
+
+.hmove { display: flex; }
+
+.hitem {
+  color: #fff;
+  font-size: 24px;
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 1.5%;
+}
+ 
+@keyframes tickerh {
+  0% { transform: translate3d(-400%, 0, 0); }
+  100% { transform: translate3d(100%, 0, 0); }
+}
+.hmove { animation: tickerh linear 40s infinite; }
+.hmove:hover { animation-play-state: paused; }
