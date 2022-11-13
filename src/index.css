@@ -20,11 +20,10 @@ body {
   align-items: center;
 }
 .timeContainer {
-  position: absolute;
+  position: fixed;
   font-size: 35px;
   width: max-content;
-  translate: calc(850%) calc(20%);
-  float: right;
+  translate: calc(800%) calc(20%);
 }
 .square {
   border: 1px solid #b2b2b2;

@@ -3,6 +3,7 @@ import {Row, Col, Carousel} from 'react-bootstrap'
 
 
 const MainContent = () => {
+
     return (
         <div className="border-content">
 
@@ -30,14 +31,15 @@ const MainContent = () => {
                         <div className="bg-card">
                             <div className="main-card" >
                                 <Carousel className="image-content">
-                                    <Carousel.Item interval={30000}>
+                                    <Carousel.Item interval={30000} >
                                         <img
                                         className="d-block w-100"
                                         src="https://img.freepik.com/free-photo/two-people-holding-hands-together-with-love-warmth-wooden-table_1150-26177.jpg?w=2000"
                                         alt="First slide"
                                         height='421px'
+                                        
                                         />
-                                        <Carousel.Caption>
+                                        <Carousel.Caption >
                                         <h5>First slide label</h5>
                                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                                         </Carousel.Caption>
