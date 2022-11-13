@@ -1,13 +1,162 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.border-content {
+   /* border: 1px solid #333; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.timeContainer {
+  position:absolute;
+  font-size: 35px;
+  width: max-content;
+  translate: calc(960%) calc(20%);
+}
+.square {
+  border: 1px solid #333;
+  width: 100%;
+  height: 80%;
+  border-radius: .75rem;
+  box-shadow: -3px 3px 22px -15px rgba(0,0,0,0.84) inset;
+-webkit-box-shadow: -3px 3px 22px -15px rgba(0,0,0,0.84) inset;
+-moz-box-shadow: -3px 3px 22px -15px rgba(0,0,0,0.84) inset;
+}
+
+.title-card {
+  height: 60vh;
+  border-radius: .75rem;
+  margin-top: calc(-15%);
+  margin-left: calc(5%);
+  border: 1px solid #333;
+  box-shadow: -5px 4px 14px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: -5px 4px 14px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: -5px 4px 14px -7px rgba(0,0,0,0.75);
+}
+
+.title-card h1 {
+  padding: 0 1em;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.title-card p {
+  padding: 1em 1em;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.bg-card {
+  border: 1px solid #333;
+  background-color: #333;
+  height: 50vh;
+  width: 90%;
+  border-radius: 1rem;
+  margin-top: calc(3%);
+  margin-left: calc(5%);
+}
+
+.main-card {
+  border: 1px solid #333;
+  background-color: #fff;
+  height: 50vh;
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: calc(-2%);
+  margin-left: calc(-2%);
+  opacity: .9;
+}
+
+.annoucement-bg {
+  translate: 3rem -3rem;
+}
+.main-bg {
+  transform: skewX(-40deg);
+  width: 310px;
+  height: 90px;
+  padding: .3rem 0rem;
+  background: #333;
+  border: 1px solid #333;
+  box-shadow: -5px 9px 16px -9px rgba(0,0,0,0.84);
+-webkit-box-shadow: -5px 9px 16px -9px rgba(0,0,0,0.84);
+-moz-box-shadow: -5px 9px 16px -9px rgba(0,0,0,0.84);
+}
+
+.main-title {
+  transform: skewX(-40deg);
+  width: 310px;
+  height: 90px;
+  padding: .3rem 0rem;
+  background: #eee;
+  translate: .70rem -4.7rem;
+  background-color: blue;
+  border: 1px solid #333;
+  box-shadow: -5px 9px 16px -9px rgba(0,0,0,0.84);
+-webkit-box-shadow: -5px 9px 16px -9px rgba(0,0,0,0.84);
+-moz-box-shadow: -5px 9px 16px -9px rgba(0,0,0,0.84);
+}
+
+.main-title h1 {
+  transform: skewX(40deg);
+  margin-top: .75rem;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+
+/* SIDE AREA */
+.sederLogo {
+  width: 45%;
+  margin-left: calc(25%);
+  margin-top: calc(10%);
+}
+
+.side-Container {
+  height: 100vh;
+  margin-left: calc(5%);
+}
+.weather-widget {
+  display: block;
+  position: absolute;
+  margin-top: calc(13%);
+  margin-left: calc(5%);
+}
+
+.sun-weather {
+  width: 15%;
+  margin-top: calc(-3%);
+}
+
+.cloud-weather {
+  width: 20%;
+  margin-left: calc(-17%);
+  margin-top: calc(5%);
+}
+
+.Date {
+  translate: calc(0%) calc(-80%);
+}
+
+/* .degree {
+  translate: calc(15%) calc(-450%);
+  font-size: 42px;
+}
+
+.celsius {
+  translate: calc(15.5%) calc(-480%);
+  font-size: 42px;
+}
+
+
+.Location {
+  translate: calc(1%) calc(-1%);
+} */
