@@ -27,8 +27,8 @@ body {
 }
 .timeContainer {
   color: rgba(75,75,75,0.75);
-  font-size: 35px;
-  translate: calc(80%) calc(-300%);
+  font-size: 30px;
+  translate: calc(87%) calc(-350%);
 }
 
 .square {
@@ -63,7 +63,12 @@ body {
   display: flex;
   justify-content: center;
   translate: 0rem 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 30px;
+  color: #4B4B4B;
 }
+
 
 .title-card p {
   padding: 1em 1em;
@@ -173,6 +178,8 @@ body {
 
 .Date {
   translate: calc(0%) calc(-80%);
+  font-size: 30px;
+  color: #4B4B4B;
 }
 
 .copyrights {
@@ -202,8 +209,11 @@ body {
     background-position: 200% center;
   }
 }
+
  .Location {
-  translate: calc(-1%) calc(-1%);
+  translate: calc(0%) calc(2%);
+  font-size: 30px;
+  color: #4B4B4B;
 }
 
 .footer-News {
