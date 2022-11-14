@@ -12,6 +12,10 @@ body {
 
 .container {
   width: max-content;
+  height: max-content;
+  box-sizing: border-box;
+  position: absolute;
+  /* border: 1px solid black; */
 }
 
 .border-content {
@@ -31,7 +35,7 @@ body {
   border: 1px solid rgba(75,75,75,0.3);
   width: 100%;
   height: 80%;
-  translate: calc(0%) calc(15%);
+  translate: calc(0%) calc(20%);
   border-radius: .75rem;
   box-shadow: -3px 23px 15px -24px rgba(0,0,0,0.43);
   -webkit-box-shadow: -3px 23px 15px -24px rgba(0,0,0,0.43);
@@ -140,7 +144,7 @@ body {
 .weather-widget {
   display: block;
   position: absolute;
-  margin-top: calc(9%);
+  margin-top: calc(10%);
   margin-left: calc(5%);
 }
 
@@ -170,28 +174,42 @@ body {
   translate: calc(0%) calc(-80%);
 }
 
-/* .degree {
-  translate: calc(15%) calc(-450%);
-  font-size: 42px;
+.copyrights {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #050575 0%,
+    #050575 29%,
+    #4B4B4B 67%,
+    #050575 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 26px;
+  translate: calc(25%) calc(-40%);
 }
 
-.celsius {
-  translate: calc(15.5%) calc(-480%);
-  font-size: 42px;
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
-
-
- */
  .Location {
   translate: calc(-1%) calc(-1%);
 }
 
 .footer-News {
-  position: absolute;
-  width: 105%;
+  width: 100%;
   height: 10vh;
   background-color: #050577;
-  translate: calc(0%) calc(-90%);
+  translate: calc(0%) calc(0%);
   overflow: hidden;
 }
 

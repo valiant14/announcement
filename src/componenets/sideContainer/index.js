@@ -74,6 +74,9 @@ const SideContainer = ({times}) => {
                     </Col>
                 </Row>
             </div>
+                <Row>
+                  <h1 className="copyrights">Shared Services <br></br>&nbsp;IT Department</h1>
+                </Row>
         </React.Fragment>
         )
       }

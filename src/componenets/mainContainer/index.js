@@ -52,7 +52,7 @@ const MainContent = ({getTime}) => {
                     <Col>
                             <div className="timeContainer">{getTime}</div>
                             <div className="main-card" >
-                                <Carousel className="image-content" onSlide={test}>
+                                <Carousel onSlide={test}>
                                     <Carousel.Item interval={30000} >
                                         <img
                                         className="imagePic"
