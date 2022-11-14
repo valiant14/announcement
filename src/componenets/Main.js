@@ -49,7 +49,7 @@ const Main = () => {
     }
 
     const times = currentTime.getHours()
-
+    const MyCurrentTime = GetTime()
     return (
         <React.Fragment>
             <Row>
@@ -59,8 +59,8 @@ const Main = () => {
                             <SideContainer times={times}/>
                         </Col>
                         <Col>
-                            <div className='timeContainer'>{GetTime()}</div>
-                            <MainContent />
+                            {/* <div className='timeContainer'>{GetTime()}</div> */}
+                            <MainContent getTime={MyCurrentTime}/>
                         </Col>
                     </Row>
                     <Row>
