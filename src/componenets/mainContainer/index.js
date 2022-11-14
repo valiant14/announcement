@@ -1,9 +1,20 @@
 import React from "react";
 import {Row, Col, Carousel} from 'react-bootstrap'
-
+import Office1 from '../../assets/office/office1.jpg'
+import Office2 from '../../assets/office/office2.jpg'
+import Office3 from '../../assets/office/office3.jpg'
 
 const MainContent = () => {
+    const [changeText, setChangeText] = React.useState(0)
 
+    const arr = ['1','2','3']
+
+
+    const test = () => {
+        setChangeText(() => changeText(arr[0]))
+    }
+
+    console.log(changeText)
     return (
         <div className="border-content">
 
@@ -11,8 +22,6 @@ const MainContent = () => {
                 <Row>
                 <div className="annoucement-bg">
                     <div className="main-bg">
-                    </div>
-                    <div className="main-title">
                         <h1>Announcement</h1>
                     </div>
                 </div>
@@ -30,12 +39,13 @@ const MainContent = () => {
                     <Col>
                         <div className="bg-card">
                             <div className="main-card" >
-                                <Carousel className="image-content">
+                                <Carousel className="image-content" onSlide={test}>
                                     <Carousel.Item interval={30000} >
                                         <img
-                                        className="d-block w-100"
-                                        src="https://img.freepik.com/free-photo/two-people-holding-hands-together-with-love-warmth-wooden-table_1150-26177.jpg?w=2000"
-                                        alt="First slide"                                                                         
+                                        className="imagePic"
+                                        src={Office1}
+                                        alt="First slide"  
+                                        height="120%"                                                                      
                                         />
                                         <Carousel.Caption >
                                         <h5>First slide label</h5>
@@ -44,8 +54,8 @@ const MainContent = () => {
                                     </Carousel.Item>
                                     <Carousel.Item interval={30000}>
                                         <img
-                                        className="d-block w-100"
-                                        src="https://miro.medium.com/max/1400/1*OEnS6-DEn56szCwdOs2mrA.jpeg"
+                                        className="imagePic"
+                                        src={Office2}
                                         alt="Second slide"
                                         />
                                         <Carousel.Caption>
@@ -55,8 +65,8 @@ const MainContent = () => {
                                     </Carousel.Item>
                                     <Carousel.Item interval={30000}>
                                         <img
-                                        className="d-block w-100"
-                                        src="https://cdn.pixabay.com/photo/2018/01/04/19/43/love-3061483__340.jpg"
+                                        className="imagePic"
+                                        src={Office3}
                                         alt="Third slide"
                                         />
                                         <Carousel.Caption>

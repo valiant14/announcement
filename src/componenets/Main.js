@@ -10,7 +10,6 @@ import axios from "axios";
 const Main = () => {
     const [currentTime, setCurrentTime] = useState(new Date())
 
-
     useEffect(() => {
         var timer = setInterval(() => setCurrentTime(new Date()), 60000)
 
