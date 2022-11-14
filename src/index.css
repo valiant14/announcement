@@ -34,7 +34,7 @@ body {
 .square {
   border: 1px solid rgba(75,75,75,0.3);
   width: 100%;
-  height: 80%;
+  height: 80vh;
   translate: calc(0%) calc(20%);
   border-radius: .75rem;
   box-shadow: -3px 23px 15px -24px rgba(0,0,0,0.43);
@@ -45,7 +45,7 @@ body {
 
 .title-card {
   height: fit-content;
-  translate: calc(5%) calc(1%);
+  translate: calc(5%) calc(0%);
   box-shadow: -3px 23px 15px -24px rgba(0,0,0,0.43);
   -webkit-box-shadow: -3px 23px 15px -24px rgba(0,0,0,0.43);
   -moz-box-shadow: -3px 23px 15px -24px rgba(0,0,0,0.43);
@@ -75,15 +75,16 @@ body {
 
 .main-card {
   background-color: #fff;
+  border-radius: 1rem;
   width: 90%;
-  translate: calc(3%) calc(-9%);
+  translate: calc(5%) calc(-5%);
   box-shadow: 11px 11px 5px 3px rgba(75,75,75,0.75);
   -webkit-box-shadow: 11px 11px 5px 3px rgba(75,75,75,0.75);
   -moz-box-shadow: 11px 11px 5px 3px rgba(75,75,75,0.75);
 }
 
 .imagePic {
-  width: 115%;
+  width: 100%;
 }
 
 
