@@ -35,9 +35,7 @@ const MainContent = () => {
                                         <img
                                         className="d-block w-100"
                                         src="https://img.freepik.com/free-photo/two-people-holding-hands-together-with-love-warmth-wooden-table_1150-26177.jpg?w=2000"
-                                        alt="First slide"
-                                        height='421px'
-                                        
+                                        alt="First slide"                                                                         
                                         />
                                         <Carousel.Caption >
                                         <h5>First slide label</h5>
@@ -49,7 +47,6 @@ const MainContent = () => {
                                         className="d-block w-100"
                                         src="https://miro.medium.com/max/1400/1*OEnS6-DEn56szCwdOs2mrA.jpeg"
                                         alt="Second slide"
-                                        height='421px'
                                         />
                                         <Carousel.Caption>
                                         <h5>Second slide label</h5>
@@ -61,7 +58,6 @@ const MainContent = () => {
                                         className="d-block w-100"
                                         src="https://cdn.pixabay.com/photo/2018/01/04/19/43/love-3061483__340.jpg"
                                         alt="Third slide"
-                                        height='421px'
                                         />
                                         <Carousel.Caption>
                                         <h5>Third slide label</h5>
