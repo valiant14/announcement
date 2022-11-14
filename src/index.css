@@ -33,8 +33,9 @@ body {
 
 .square {
   border: 1px solid rgba(75,75,75,0.3);
+  background-color: #fff;
   width: 100%;
-  height: 80vh;
+  height: fit-content;
   translate: calc(0%) calc(20%);
   border-radius: .75rem;
   box-shadow: -3px 23px 15px -24px rgba(0,0,0,0.43);
@@ -45,7 +46,7 @@ body {
 
 .title-card {
   height: fit-content;
-  translate: calc(5%) calc(0%);
+  translate: calc(5%) calc(-4%);
   box-shadow: -3px 23px 15px -24px rgba(0,0,0,0.43);
   -webkit-box-shadow: -3px 23px 15px -24px rgba(0,0,0,0.43);
   -moz-box-shadow: -3px 23px 15px -24px rgba(0,0,0,0.43);
@@ -70,6 +71,7 @@ body {
 }
 
 
+
 .title-card p {
   padding: 1em 1em;
   display: flex;
@@ -80,7 +82,6 @@ body {
 
 .main-card {
   background-color: #fff;
-  border-radius: 1rem;
   width: 90%;
   translate: calc(5%) calc(-5%);
   box-shadow: 11px 11px 5px 3px rgba(75,75,75,0.75);
@@ -89,7 +90,9 @@ body {
 }
 
 .imagePic {
-  width: 100%;
+  width: 50%;
+  padding: 1rem;
+  translate: calc(50%);
 }
 
 
@@ -169,11 +172,20 @@ body {
   width: 20%;
   margin-left: calc(-17%);
   margin-top: calc(5%);
+  animation: move 480s linear infinite;
+  overflow: visible;
 }
 .cloud-weather-night{
   width: 25%;
-  margin-left: calc(-29%);
+  margin-left: calc(-20%);
   margin-top: calc(5%);
+  animation: move 480s linear infinite;
+  overflow: visible;
+}
+
+@keyframes move {
+  0% { transform: translate3d(-100%, 0, 0); }
+  100% { transform: translate3d(100%, 0, 0); }
 }
 
 .Date {

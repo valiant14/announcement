@@ -67,6 +67,7 @@ const SideContainer = ({times}) => {
                             <h1 className="Location">Riyadh, {item.avgtemp_c}<span>&#176;</span>&nbsp;C</h1>
                                 <img src={Sun} alt="..." className="sun-weather"/>
                                 <img src={Cloud} alt="..." className="cloud-weather"/>
+                                {/* <img src={Cloud} alt="..." className="cloud-weather2"/> */}
                             <h3 className="Date">{template}</h3>
                             </div>
                         )
