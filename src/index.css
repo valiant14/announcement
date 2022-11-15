@@ -155,6 +155,7 @@ body {
   position: absolute;
   margin-top: calc(10%);
   margin-left: calc(5%);
+  position: absolute;
 }
 
 .sun-weather {
@@ -229,6 +230,7 @@ body {
 }
 
 .footer-News {
+  position: absolute;
   width: 100%;
   height: 10vh;
   background-color: #050577;
