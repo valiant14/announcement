@@ -199,10 +199,10 @@ body {
   text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
-    #050575 0%,
-    #050575 29%,
+    #4B4B4B 0%,
+    #4B4B4B 29%,
     #4B4B4B 67%,
-    #050575 100%
+    #4B4B4B 100%
   );
   background-size: auto auto;
   background-clip: border-box;
