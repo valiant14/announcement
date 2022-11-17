@@ -8,14 +8,14 @@ const News = () => {
             <Col>
             <div className="footer-News">
                 <div className="hmove">
-                    <li className="hitem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li className="hitem">Aliquam consequat varius consequat.</li>
-                    <li className="hitem">Fusce dapibus turpis vel nisi malesuada sollicitudin.</li>
-                    <li className="hitem">Pellentesque auctor molestie orci ut blandit.</li>
-                    <li className="hitem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li className="hitem">Aliquam consequat varius consequat.</li>
-                    <li className="hitem">Fusce dapibus turpis vel nisi malesuada sollicitudin.</li>
-                    <li className="hitem">Pellentesque auctor molestie orci ut blandit.</li>
+                    <li className="hitem">Welcome to SEDER GROUP.</li>
+                    <li className="hitem">Welcome to SEDER GROUP.</li>
+                    <li className="hitem">Welcome to SEDER GROUP.</li>
+                    <li className="hitem">Welcome to SEDER GROUP.</li>
+                    <li className="hitem">Welcome to SEDER GROUP.</li>
+                    <li className="hitem">Welcome to SEDER GROUP.</li>
+                    <li className="hitem">Welcome to SEDER GROUP.</li>
+                    <li className="hitem">Welcome to SEDER GROUP.</li>
                 </div>
         </div>
             </Col>

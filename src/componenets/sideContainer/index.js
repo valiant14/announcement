@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef, useEffect} from "react";
 import Seder from '../../assets/sederLogo.png'
 import {Row, Col} from 'react-bootstrap'
 import Sun from '../../assets/Sun.png'
@@ -6,10 +6,13 @@ import Moon from '../../assets/Moon.png'
 import Cloud from '../../assets/Cloud2.png'
 import axios from 'axios';
 
+
 const SideContainer = ({times}) => {
     const [data, setData] = React.useState([]);
     const [dates, setDates] = React.useState([]);
     const [isWeather, setIsWeather] = React.useState(false)
+
+    const ref = useRef(null)
 
     React.useEffect(() => {
         const options = {
@@ -38,11 +41,12 @@ const SideContainer = ({times}) => {
           .catch(function (error) {
             setData(error);
           });
-          if(times > 18) {
+          if(times > 12) {
             setIsWeather(true)
           }
           else {
-            setIsWeather(false)
+            setIsWeather(true)
+            // setIsWeather(true)
           }
       }, []);
 
@@ -75,15 +79,45 @@ const SideContainer = ({times}) => {
                     })}
                     </Col>  
                 </Row>
-                <Row>
-                  <Col>
-                    
-                  </Col> 
-                </Row>
             </div>
         </React.Fragment>
         )
       }
+
+      const Raining = () => {
+
+        const randomNumber = (limit) => {
+          return Math.floor(Math.random() * limit);
+        };
+
+        const rain = document.querySelector(".rain");
+        for (let i = 0; i < 250; i++) {
+          const rainDrop = document.querySelector(".rains");
+          const aNumber = randomNumber(20);
+          const timeDelay = randomNumber(10);
+          const animDuration = randomNumber(5) + Math.random() + 0.2;
+          rainDrop.style.left = `${aNumber}%`;
+          rainDrop.style.animationDelay = `${timeDelay}s`;
+          rainDrop.style.animationDuration = `${animDuration}s`;
+          rain.appendChild(rainDrop);
+        }
+
+       return (
+         <>
+          <div className="rain">
+            <span className='rains'></span>
+            <span className='rains'></span>
+            <span className='rains'></span>
+            <span className='rains'></span>
+            <span className='rains'></span>
+            <span className='rains'></span>
+            <span className='rains'></span>
+            <span className='rains'></span>
+            <span className='rains'></span>
+          </div>
+         </>
+       )
+     }
 
       const Night = () => {
         return (
@@ -141,7 +175,7 @@ const SideContainer = ({times}) => {
         //     </div>
         // </React.Fragment>
         <>
-            {isWeather === true ?  Night() : SunnyDay()}
+            {isWeather === true ?  SunnyDay() : SunnyDay()}
         </>
     )
 }

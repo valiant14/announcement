@@ -55,7 +55,7 @@ const MainContent = ({ getTime }) => {
           <div className="square">
           <div className="annoucement-bg">
             <div className="main-bg">
-              <h1>Announcement</h1>   
+              {/* <h1>Announcement</h1>    */}
             </div>
           </div>
             
