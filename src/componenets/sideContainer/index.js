@@ -69,15 +69,18 @@ const SideContainer = ({times}) => {
                                 <img src={Cloud} alt="..." className="cloud-weather"/>
                                 {/* <img src={Cloud} alt="..." className="cloud-weather2"/> */}
                             <h3 className="Date">{template}</h3>
+                            <h1 className="copyrights">Shared Services <br></br>&nbsp;IT Department</h1>
                             </div>
                         )
                     })}
-                    </Col>
+                    </Col>  
+                </Row>
+                <Row>
+                  <Col>
+                    
+                  </Col> 
                 </Row>
             </div>
-                <Row>
-                  <h1 className="copyrights">Shared Services <br></br>&nbsp;IT Department</h1>
-                </Row>
         </React.Fragment>
         )
       }

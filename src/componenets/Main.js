@@ -12,7 +12,7 @@ const Main = () => {
 
     useEffect(() => {
         var timer = setInterval(() => setCurrentTime(new Date()), 60000)
-
+        // refresh()
         return function cleanup() {
             clearInterval(timer)
         }
@@ -20,6 +20,12 @@ const Main = () => {
 
     },[])
 
+    const refresh = () => {
+        setTimeout(() => {
+            window.location.reload()
+        }, 5000);
+    
+    }
     // var time = currentTime.getHours() + ":" + currentTime.getMinutes() + ":" + currentTime.getSeconds();
     // const toRegularTime = (militaryTime) => {
     //     const [hours, minutes] = militaryTime.split(':');
@@ -52,19 +58,18 @@ const Main = () => {
     const MyCurrentTime = GetTime()
     return (
         <React.Fragment>
-            <Row>
+            <Row className='rowHeight'>
                 <Col className='container'>
                     <Row>
                         <Col sm={3}>
                             <SideContainer times={times}/>
                         </Col>
-                        <Col>
-                            {/* <div className='timeContainer'>{GetTime()}</div> */}
+                        <Col sm={6}>
                             <MainContent getTime={MyCurrentTime}/>
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
+                        <Col sm={12}>
                             <News />
                         </Col>
                     </Row>

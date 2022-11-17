@@ -2,12 +2,18 @@
 
 * {
   padding: 0;
-  margin: 0;
+  margin: 1rem 1rem;
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  
+}
+
+.rowHeight {
+  height: 768px;
+  /* border: 1px solid black; */
 }
 
 .container {
@@ -19,7 +25,7 @@ body {
 }
 
 .border-content {
-   /* border: 1px solid #333; */
+  border: 1px solid #333;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -28,15 +34,19 @@ body {
 .timeContainer {
   color: rgba(75,75,75,0.75);
   font-size: 30px;
-  translate: calc(87%) calc(-350%);
+  margin-left: 105%;
+  width: fit-content;
+  /* translate: calc(87%) calc(-350%); */
 }
 
 .square {
   border: 1px solid rgba(75,75,75,0.3);
   background-color: #fff;
-  width: 100%;
+  width: 128%;
+  margin-left: -3%;
   height: fit-content;
-  translate: calc(0%) calc(20%);
+  /* translate: calc(0%) calc(20%); */
+  margin-top: 5%;
   border-radius: .75rem;
   box-shadow: -3px 23px 15px -24px rgba(0,0,0,0.43);
   -webkit-box-shadow: -3px 23px 15px -24px rgba(0,0,0,0.43);
@@ -83,7 +93,8 @@ body {
 .main-card {
   background-color: #fff;
   width: 90%;
-  translate: calc(5%) calc(-5%);
+  margin-left: 5%;
+  margin-bottom: 5%;
   box-shadow: 11px 11px 5px 3px rgba(75,75,75,0.75);
   -webkit-box-shadow: 11px 11px 5px 3px rgba(75,75,75,0.75);
   -moz-box-shadow: 11px 11px 5px 3px rgba(75,75,75,0.75);
@@ -92,7 +103,7 @@ body {
 .imagePic {
   width: 50%;
   padding: 1rem;
-  translate: calc(50%);
+  margin-left: calc(20%);
 }
 
 
@@ -111,7 +122,8 @@ body {
 }
 
 .annoucement-bg {
-  translate: 5rem -3rem;
+  margin-top: -5%;
+  margin-left: 6%;
 }
 
 .main-bg {
@@ -140,7 +152,7 @@ body {
 /* SIDE AREA */
 .sederLogo {
   width: 45%;
-  margin-left: calc(25%);
+  margin-left: calc(15%);
   margin-top: calc(10%);
 }
 
@@ -153,8 +165,8 @@ body {
 .weather-widget {
   display: block;
   position: absolute;
-  margin-top: calc(10%);
-  margin-left: calc(5%);
+  margin-top: calc(5%);
+  margin-left: calc(0%);
   position: absolute;
 }
 
@@ -190,7 +202,8 @@ body {
 }
 
 .Date {
-  translate: calc(0%) calc(-80%);
+  /* translate: calc(0%) calc(-80%); */
+  margin-top: -3%;
   font-size: 30px;
   color: #4B4B4B;
 }
@@ -214,7 +227,7 @@ body {
   animation: textclip 2s linear infinite;
   display: inline-block;
       font-size: 26px;
-  translate: calc(25%) calc(-40%);
+  margin-left: 3%;
 }
 
 @keyframes textclip {
@@ -230,11 +243,11 @@ body {
 }
 
 .footer-News {
-  position: absolute;
   width: 100%;
-  height: 10vh;
+  height: 70px;
   background-color: #050577;
-  translate: calc(0%) calc(0%);
+  margin-top: -13%;
+  margin-left: -2.5%;
   overflow: hidden;
 }
 
@@ -244,10 +257,10 @@ body {
   color: #fff;
   font-size: 24px;
   flex-shrink: 0;
+  margin-top: -.2%;
   width: 100%;
   box-sizing: border-box;
   text-align: center;
-  margin-top: 1.5%;
 }
  
 @keyframes tickerh {
@@ -282,3 +295,11 @@ body {
   padding: 1rem;
   margin-top: calc(9%);
 } */
+
+@media (min-width: 1240px) and (max-width: 3840px) {
+  * {
+    padding: 0;
+    margin: 1rem 1rem;
+    box-sizing: border-box;
+  }
+}

@@ -41,14 +41,8 @@ const MainContent = ({ getTime }) => {
   };
 
   return (
-    <div className="border-content">
-      <div className="square">
+    <>
         <Row>
-          <div className="annoucement-bg">
-            <div className="main-bg">
-              <h1>Announcement</h1>
-            </div>
-          </div>
           {/* <Col sm={4}>
             <div className="title-card">
               <h1>{SLIDES[changeText].title}</h1>
@@ -56,8 +50,15 @@ const MainContent = ({ getTime }) => {
               <p>{SLIDES[changeText].textEN}</p>
             </div>
           </Col> */}
-          <Col>
-            <div className="timeContainer">{getTime}</div>
+          <div className="timeContainer">{getTime}</div>
+          <Col sm={12}>
+          <div className="square">
+          <div className="annoucement-bg">
+            <div className="main-bg">
+              <h1>Announcement</h1>   
+            </div>
+          </div>
+            
             <div className="main-card">
               <Carousel onSlide={test}>
                 <Carousel.Item interval={30000}>
@@ -94,10 +95,11 @@ const MainContent = ({ getTime }) => {
                 </Carousel.Item>
               </Carousel>
             </div>
+            </div>
           </Col>
         </Row>
-      </div>
-    </div>
+    </>
+
   );
 };
 
