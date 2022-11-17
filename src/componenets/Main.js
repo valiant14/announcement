@@ -1,9 +1,9 @@
 import React,{useState,useEffect} from 'react'
 import {Row, Col} from 'react-bootstrap'
 import bg from '../assets/bg.mp4'
-import SideContainer from './sideContainer'
-import MainContent from './mainContainer'
-import News from './newContainer'
+import SideContainer from '../componenets/LGTV/sideContainer'
+import MainContent from '../componenets/LGTV/mainContainer'
+import News from '../componenets/LGTV/newContainer'
 import axios from "axios";
 
 

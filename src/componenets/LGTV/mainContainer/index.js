@@ -1,8 +1,8 @@
 import React from "react";
 import { Row, Col, Carousel } from "react-bootstrap";
-import sederLogo from "../../assets/sederLogo.png";
-import Office2 from "../../assets/office/office2.jpg";
-import Office3 from "../../assets/office/office3.jpg";
+import sederLogo from "../../../assets/sederLogo.png";
+import Office2 from "../../../assets/office/office2.jpg";
+import Office3 from "../../../assets/office/office3.jpg";
 
 const MainContent = ({ getTime }) => {
   const [changeText, setChangeText] = React.useState(0);

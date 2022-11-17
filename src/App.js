@@ -1,6 +1,6 @@
 import Main from "./componenets/Main";
 import React from "react";
-import Empty from "./componenets/Empty";
+
 
 function App() {
   const [Emptys, SetEmptys] = React.useState(false)

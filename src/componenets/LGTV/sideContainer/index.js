@@ -1,9 +1,9 @@
 import React,{useRef, useEffect} from "react";
-import Seder from '../../assets/sederLogo.png'
+import Seder from '../../../assets/sederLogo.png'
 import {Row, Col} from 'react-bootstrap'
-import Sun from '../../assets/Sun.png'
-import Moon from '../../assets/Moon.png'
-import Cloud from '../../assets/Cloud2.png'
+import Sun from '../../../assets/Sun.png'
+import Moon from '../../../assets/Moon.png'
+import Cloud from '../../../assets/Cloud2.png'
 import axios from 'axios';
 
 
