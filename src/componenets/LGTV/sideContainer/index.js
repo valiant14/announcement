@@ -50,6 +50,7 @@ const SideContainer = ({times}) => {
           }
       }, []);
 
+
       const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
       const monthDate = dates.toLocaleString().split('-')
       const template = `${months[monthDate[1] - 1]} ${monthDate[2]} ${monthDate[0]}`
@@ -66,9 +67,10 @@ const SideContainer = ({times}) => {
                 <Row>
                     <Col>
                     {data.map(item => {
+                      console.log(item)
                         return (
                             <div className="weather-widget">
-                            <h1 className="Location">Riyadh, {item.avgtemp_c}<span>&#176;</span>&nbsp;C</h1>
+                            <h1 className="Location">Riyadh, {item.maxtemp_c - 1}<span>&#176;</span>&nbsp;C</h1>
                                 <img src={Sun} alt="..." className="sun-weather"/>
                                 <img src={Cloud} alt="..." className="cloud-weather"/>
                                 {/* <img src={Cloud} alt="..." className="cloud-weather2"/> */}
