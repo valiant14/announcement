@@ -13,7 +13,7 @@ const Main = () => {
 
     useEffect(() => {
         var timer = setInterval(() => setCurrentTime(new Date()), 60000)
-        // refresh()
+        refresh()
         return function cleanup() {
             clearInterval(timer)
         }
@@ -24,7 +24,7 @@ const Main = () => {
     const refresh = () => {
         setTimeout(() => {
             window.location.reload()
-        }, 5000);
+        }, 120000);
     
     }
     // var time = currentTime.getHours() + ":" + currentTime.getMinutes() + ":" + currentTime.getSeconds();
