@@ -6,7 +6,7 @@ import MainContent from '../componenets/LGTV/mainContainer/index'
 // import MainContent from '../componenets/LGTV/mainContainer/withTextDiv'
 import News from '../componenets/LGTV/newContainer'
 import axios from "axios";
-
+import BG from './../assets/office/officeBG.mp4'
 
 const Main = () => {
     const [currentTime, setCurrentTime] = useState(new Date())
@@ -24,7 +24,7 @@ const Main = () => {
     const refresh = () => {
         setTimeout(() => {
             window.location.reload()
-        }, 120000);
+        }, 60000);
     
     }
     // var time = currentTime.getHours() + ":" + currentTime.getMinutes() + ":" + currentTime.getSeconds();

@@ -11,8 +11,22 @@ body {
   
 }
 
+#myVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 .rowHeight {
   height: 768px;
+  padding: 0;
+  margin: 0;
   /* border: 1px solid black; */
 }
 
@@ -92,6 +106,7 @@ body {
 
 .main-card {
   background-color: #fff;
+  /* border: 1px solid rgba(75,75,75,0.75); */
   width: 90%;
   margin-left: 5%;
   margin-bottom: 5%;
@@ -106,6 +121,39 @@ body {
   margin-left: calc(20%);
 }
 
+.imagePic_gidam{
+  width: 88%;
+  height: 50vh;
+  border: 1px solid rgba(151, 149, 149, 0.75);
+}
+
+.imagePic-football {
+  width: 88%;
+  height: 50vh;
+  border: 1px solid rgba(151, 149, 149, 0.75);
+}
+
+.imagePic-Ceremony {
+  width: 90%;
+  height: 55vh;
+  border: 1px solid rgba(151, 149, 149, 0.75);
+}
+
+.imagePic-weekends {
+  width: 90%;
+  height: 58vh;
+  border: 1px solid rgba(151, 149, 149, 0.75);
+}
+.paraG {
+  color: black;
+  font-size: 18px;
+  margin-top: -5%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: .5rem;
+  font-weight: bold;
+}
 
 /* change transition duration to control the speed of fade effect */
 .carousel-item {
@@ -171,9 +219,9 @@ body {
 }
 
 .sun-weather {
-  width: 10%;
+  width: 12%;
   margin-top: calc(-3%);
-  margin-left: calc(5%);
+  margin-left: calc(3%);
 }
 
 .moon-weather {
@@ -184,11 +232,20 @@ body {
 
 .cloud-weather {
   width: 15%;
-  margin-left: calc(-17%);
+  margin-left: calc(-15%);
   margin-top: calc(5%);
-  animation: move 480s linear infinite;
+  /* animation: move 480s linear infinite; */
   overflow: visible;
 }
+
+/* .cloud-weather2 {
+  width: 15%;
+  margin-left: calc(-17%);
+  margin-top: calc(7%);
+  animation: move 480s linear infinite;
+  overflow: visible;
+} */
+
 .cloud-weather-night{
   width: 25%;
   margin-left: calc(-20%);
@@ -259,7 +316,7 @@ body {
   color: #fff;
   font-size: 24px;
   flex-shrink: 0;
-  margin-top: -.2%;
+  margin-top: .2%;
   width: 100%;
   box-sizing: border-box;
   text-align: center;

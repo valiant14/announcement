@@ -3,6 +3,10 @@ import { Row, Col, Carousel } from "react-bootstrap";
 import sederLogo from "../../../assets/sederLogo.png";
 import Office2 from "../../../assets/office/office2.jpg";
 import Office3 from "../../../assets/office/office3.jpg";
+import football from '../../../assets/football.jpg'
+import gidam from '../../../assets/gidam.jpg'
+import Ceremony from '../../../assets/ceremony.jpeg'
+import Weekends from '../../../assets/weekends.jpeg'
 
 const MainContent = ({ getTime }) => {
   const [changeText, setChangeText] = React.useState(0);
@@ -55,7 +59,7 @@ const MainContent = ({ getTime }) => {
           <div className="square">
           <div className="annoucement-bg">
             <div className="main-bg">
-              {/* <h1>Announcement</h1>    */}
+              {/* <h1>News</h1> */}
             </div>
           </div>
             
@@ -63,37 +67,23 @@ const MainContent = ({ getTime }) => {
               <Carousel onSlide={test}>
                 <Carousel.Item interval={30000}>
                   <img className="imagePic" src={sederLogo} alt="First slide" />
-                  {/* <Carousel.Caption>
-                    <h5>First slide label</h5>
-                    <p>
-                      Nulla vitae elit libero, a pharetra augue mollis interdum.
-                    </p>
-                  </Carousel.Caption> */}
+                <Carousel.Caption>
+                    {/* <h5>First slide label</h5> */}
+                    {/* <p >
+                    شركة مجموعة سدر " الشريك الرئيسي " لملتقى التطوع الأول تحت رعاية امير منطقة مكة المكرمة
+                    </p> */}
+                  </Carousel.Caption>
+                </Carousel.Item>
+                {/* <Carousel.Item interval={30000}>
+                  <img className="imagePic" src={sederLogo} alt="First slide" />
                 </Carousel.Item>
                 <Carousel.Item interval={30000}>
-                  <img
-                    className="imagePic"
-                    src={sederLogo}
-                    alt="Second slide"
-                  />
-                  {/* <Carousel.Caption>
-                    <h5>Second slide label</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </Carousel.Caption> */}
-                </Carousel.Item>
-                <Carousel.Item interval={30000}>
-                  <img className="imagePic" src={sederLogo} alt="Third slide" />
-                  {/* <Carousel.Caption>
-                    <h5>Third slide label</h5>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption> */}
-                </Carousel.Item>
+                  <img className="imagePic" src={sederLogo} alt="First slide" />
+                </Carousel.Item> */}
               </Carousel>
+                    {/* <p className="paraG">
+                    شركة مجموعة سدر " الشريك الرئيسي " لملتقى التطوع الأول تحت رعاية امير منطقة مكة المكرمة
+                    </p> */}
             </div>
             </div>
           </Col>
