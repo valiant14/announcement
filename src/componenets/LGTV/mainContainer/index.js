@@ -7,6 +7,10 @@ import football from '../../../assets/football.jpg'
 import gidam from '../../../assets/gidam.jpg'
 import Ceremony from '../../../assets/ceremony.jpeg'
 import Weekends from '../../../assets/weekends.jpeg'
+import GM from '../../../assets/GM.jpeg'
+import PMO from '../../../assets/PMO.png'
+import PMO2 from '../../../assets/PMO2.png'
+import RainingAAAA from '../../../assets/rain202.png'
 
 const MainContent = ({ getTime }) => {
   const [changeText, setChangeText] = React.useState(0);

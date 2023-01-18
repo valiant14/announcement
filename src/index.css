@@ -155,6 +155,18 @@ body {
   font-weight: bold;
 }
 
+.imagePic-GM {
+  width: 90%;
+  height: 55vh;
+  /* border: 1px solid rgba(151, 149, 149, 0.75); */
+}
+
+.imagePic-PMO{
+  width: 90%;
+  height: 50vh;
+  /* border: 1px solid rgba(151, 149, 149, 0.75); */
+}
+
 /* change transition duration to control the speed of fade effect */
 .carousel-item {
   transition: transform 1.5s ease-in-out;
@@ -224,6 +236,23 @@ body {
   margin-left: calc(3%);
 }
 
+.rain-weather {
+  width: 45%;
+  margin-top: calc(-1%);
+  margin-left: calc(12%);
+}
+
+.imagePic-raining {
+  width: 80%;
+  margin-left: calc(5%);
+  margin-top: calc(-10%);
+}
+/* .rain-weather-umbrella{
+  width: 30%;
+  margin-top: calc(20%);
+  margin-left: calc(-30%);
+} */
+
 .moon-weather {
   width: 25%;
   margin-left: calc(-5%);
@@ -285,7 +314,7 @@ body {
   animation: textclip 2s linear infinite;
   display: inline-block;
       font-size: 26px;
-  margin-left: 3%;
+  margin-left: 6%;
   margin-top: 1%;
 }
 

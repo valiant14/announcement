@@ -5,7 +5,8 @@ import Sun from '../../../assets/Sun.png'
 import Moon from '../../../assets/Moon.png'
 import Cloud from '../../../assets/Cloud2.png'
 import axios from 'axios';
-
+import Rain from '../../../assets/raining.png'
+import Umbrella from '../../../assets/umbrella.png'
 
 const SideContainer = ({times}) => {
     const [data, setData] = React.useState([]);
@@ -70,9 +71,11 @@ const SideContainer = ({times}) => {
                       console.log(item)
                         return (
                             <div className="weather-widget">
-                            <h1 className="Location">Riyadh, {item.maxtemp_c - 1}<span>&#176;</span>&nbsp;C</h1>
+                            <h1 className="Location">Riyadh, {item.avgtemp_c}<span>&#176;</span>&nbsp;C</h1>
                                 <img src={Sun} alt="..." className="sun-weather"/>
                                 <img src={Cloud} alt="..." className="cloud-weather"/>
+                                {/* <img src={Rain} alt="..." className="rain-weather"/> */}
+                                {/* <img src={Umbrella} alt="..." className="rain-weather-umbrella"/> */}
                                 {/* <img src={Cloud} alt="..." className="cloud-weather2"/> */}
                             <h3 className="Date">{template}</h3>
                             <h1 className="copyrights">Shared Services <br></br>&nbsp;IT Department</h1>
