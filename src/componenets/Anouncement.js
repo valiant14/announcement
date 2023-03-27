@@ -1,14 +1,14 @@
 import React,{useState,useEffect} from 'react'
 import {Row, Col} from 'react-bootstrap'
 import bg from '../assets/bg.mp4'
-import SideContainer from '../componenets/LGTV/sideContainer'
-import MainContent from '../componenets/LGTV/mainContainer/index'
-// import MainContent from '../componenets/LGTV/mainContainer/withTextDiv'
-import News from '../componenets/LGTV/footers'
+import SideContainer from '../componenets/Anouncement_Components/sideContainer'
+import MainContent from '../componenets/Anouncement_Components/mainContainer/index'
+// import MainContent from '../componenets/Anouncement_Components/mainContainer/withTextDiv'
+import News from '../componenets/Anouncement_Components/footers'
 import axios from "axios";
 import BG from './../assets/office/officeBG.mp4'
 
-const Main = () => {
+const Announcement = () => {
     const [currentTime, setCurrentTime] = useState(new Date())
 
     useEffect(() => {
@@ -25,11 +25,6 @@ const Main = () => {
         }, 60000);
     
     }
-    // var time = currentTime.getHours() + ":" + currentTime.getMinutes() + ":" + currentTime.getSeconds();
-    // const toRegularTime = (militaryTime) => {
-    //     const [hours, minutes] = militaryTime.split(':');
-    //     return `${(hours > 12) ? hours - 12 : hours}:${minutes} ${(hours >= 12) ? 'PM' : 'AM'}`;
-    // }
 
     function GetTime() {
         var hours = currentTime.getHours()
@@ -78,4 +73,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Announcement

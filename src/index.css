@@ -155,7 +155,7 @@ body {
   font-weight: bold;
 }
 
-.imagePic-GM {
+.imagePic-GM, .imagePic-Announcement {
   width: 90%;
   height: 55vh;
   /* border: 1px solid rgba(151, 149, 149, 0.75); */

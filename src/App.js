@@ -1,22 +1,23 @@
 import Main from "./componenets/Main";
 import React from "react";
 import BG from './assets/office/officeBG.mp4'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Announcement from "./componenets/Anouncement";
 
 function App() {
   const [Emptys, SetEmptys] = React.useState(false)
 
   return (
-    // <><video loop="true" autoplay="autoplay" muted id="myVideo">
-    //   <source src={BG} type="video/mp4"></source>
-    // </video>
     <>
-      <>
-      <div className="App">
-      {/* <video loop="true" autoplay="autoplay" muted id="myVideo">
-       <source src={BG} type="video/mp4"></source>
-      </video> */}
+      {/* <div className="App">
       <Main />
-      </div></>
+      </div> */}
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="0" element={<Announcement />} />
+      </Routes>
+    </BrowserRouter>
     </>
 
   );
